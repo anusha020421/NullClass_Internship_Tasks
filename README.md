@@ -9,7 +9,7 @@ TASK-1
 Project Overview:
   This is a simple and clean personal website built with only HTML and CSS, designed to introduce myself, my skills, and ways to contact me. The website is fully responsive and adjusts gracefully across different screen sizes.
 The website consists of the following pages:
-  - Home Page: A welcome page with a responsive full-screen image and navigation bar.
+  
     CODE: Task1.html:
     
        <!DOCTYPE html>
@@ -138,8 +138,13 @@ The website consists of the following pages:
             </footer>
        </body>
     </html>
+
+  - Home Page: A welcome page with a responsive full-screen image and navigation bar.
     
   - About Page: A detailed section about me, highlighting my aspirations and a profile image.
+    CODE: about1.html
+
+        
   - Project Page: Overview of some of the important projects I have worked on, including:
       * Fashion GPT – AI-powered fashion content generation system.
       * Personal Resume Website – A portfolio project showcasing HTML/CSS skills.
