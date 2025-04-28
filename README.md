@@ -10,7 +10,7 @@ Project Overview:
   This is a simple and clean personal website built with only HTML and CSS, designed to introduce myself, my skills, and ways to contact me. The website is fully responsive and adjusts gracefully across different screen sizes.
 The website consists of the following pages:
   
-    CODE: Task1.html:
+CODE: Task1.html:
     
        <!DOCTYPE html>
        <html lang="en"> 
@@ -141,8 +141,9 @@ The website consists of the following pages:
 
   - Home Page: A welcome page with a responsive full-screen image and navigation bar.
     
-    CODE: home1.html
-<!DOCTYPE html>
+CODE: home1.html
+
+    <!DOCTYPE html>
     <html lang="en">
     <head>
     <meta charset="UTF-8">
@@ -217,16 +218,369 @@ The website consists of the following pages:
     </main>
     </body>
     </html>
-    
+     
   - About Page: A detailed section about me, highlighting my aspirations and a profile image.
-    CODE: about1.html
-
-        
-  - Project Page: Overview of some of the important projects I have worked on, including:
+     
+CODE: about1.html
+    
+     <!DOCTYPE html>
+     <html lang="en">
+     <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me</title>
+    <style>
+        body 
+        {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header 
+        {
+            background-color: rgba(2, 82, 82, 0.8);
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+        }
+        main 
+        {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+            background-color: #ffffff;
+            margin: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        .section 
+        {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            width: 100%;
+        }
+        .text 
+        {
+            flex: 1;
+            padding: 20px;
+        }
+        .image 
+        {
+            max-width: 300px;
+            height: auto;
+            border-radius: 8px;
+        }
+        .name 
+        {
+            color: blue;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            font-size: xx-large;
+        }
+        @media (max-width: 768px) 
+        {
+            .section 
+            {
+                flex-direction: column;
+                align-items: center;
+            }
+            .text 
+            {
+                text-align: center;
+                padding: 10px;
+            }
+            .image 
+            {
+                margin-top: 15px;
+            }
+        }
+        @media (max-width: 480px) 
+        {
+            header h1 
+            {
+                font-size: 24px;
+            }
+            main 
+            {
+                padding: 10px;
+            }
+            footer 
+            {
+                font-size: 12px;
+            }
+        }
+    </style>
+    </head>
+    <body>
+    <header>
+        <h1><b>ABOUT ME</b></h1>
+    </header>
+    <main>
+        <section class="section">
+            <div class="text">
+                <center>
+                    <h1 class="name"> <b>GAYAM ANUSHA</b></h1>
+                    <p><I><b> I am aspiring for Full Stack Developer roles and I am ready to take on new
+                                challenges!</b></I></p>
+                </center>
+            </div>
+            <div>
+                <img src="https://i.pinimg.com/736x/c2/4e/61/c24e613caf923e2ab1dd1fa578219f5e.jpg" alt="Gayam Anusha"
+                    class="image">
+            </div>
+        </section>
+    </main>
+    </body>
+    </html>
+    
+   - Project Page: Overview of some of the important projects I have worked on, including:
       * Fashion GPT – AI-powered fashion content generation system.
       * Personal Resume Website – A portfolio project showcasing HTML/CSS skills.
       * JDBC CRUD Application – Java-based database application.
-  - Contact Page: Provides my email, phone number, LinkedIn, GitHub links, and a contact form.
+      
+   CODE:summary1.html
+    
+    
+    <!DOCTYPE html>
+    <html lang="en">
+    
+    <head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Project</title>
+     <style>
+     body 
+        {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            
+         background-color: #f4f4f4;
+        }
+        header 
+        {
+            background-color: rgba(2, 82, 82, 0.8);
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+        }
+        h1 
+        {
+            color: white;
+        }
+        .project 
+        {
+            background-color: #ffffff;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 15px;
+            margin: 10px 0;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        .project h2 
+        {
+            color: rgba(2, 82, 82, 0.8);
+        }
+        .technologies 
+        {
+            font-weight: bold;
+            color: #555;
+        }
+        .description 
+        {
+            margin: 10px 0;
+        }
+        .conclusion 
+        {
+            margin-top: 20px;
+            font-weight: bold;
+            color: grey;
+        }
+    </style>
+    </head>
+    <body>
+    
+    <header>
+        <h1><B>PROJECT OVERVIEW</B></h1>
+    </header>
+
+    <section>
+        <p>This section highlights the key projects I have worked on, each designed to solve specific problems or
+            showcase particular skills.</p>
+
+        <div class="project">
+            <h2>Fashion GPT - AI-powered Fashion Content Generation System</h2>
+            <p class="description">Developed an AI system using GPT-2 and GANs to create fashion-related text and
+                images. Analyzed user preferences and trends to provide personalized outfit suggestions. Generated
+                product descriptions and style recommendations.</p>
+            <p class="technologies">Technologies Used: Python, PyTorch, GPT-2, GANs, Stable Diffusion, NLP</p>
+        </div>
+
+        <div class="project">
+            <h2>Personal Resume Website</h2>
+            <p class="description">Created a personal resume webpage to showcase my profile, skills, education,
+                projects, internships, certifications, and achievements. This project helped me practice frontend
+                development using semantic HTML and custom CSS styling. It improved my understanding of layout
+                structuring, responsive design, and clean user interface development using only HTML and CSS.</p>
+            <p class="technologies">Technologies Used: HTML, CSS</p>
+        </div>
+
+        <div class="project">
+
+            <h2>JDBC CRUD Operations Project</h2>
+            <p class="description">Built a Java application to perform Create, Read, Update, and Delete operations on a
+                SQL database. Used JDBC to establish the database connection, designed the database schema, and wrote
+                SQL queries to manage data efficiently. Implemented prepared statements to prevent SQL injection.</p>
+            <p class="technologies">Technologies Used: Java, JDBC, MySQL/Oracle</p>
+        </div>
+
+        <div class="conclusion">
+            <h2>Conclusion</h2>
+            <p><I>Through these projects, I aim to demonstrate my skills as a Full Stack Developer and my ability to
+                    create functional, user-friendly applications. I am eager to take on new challenges and continue
+                    learning in the field of web development.</I></p>
+        </div>
+    </section>
+    </body>
+    </html>
+    
+   - Contact Page: Provides my email, phone number, LinkedIn, GitHub links, and a contact form.
+
+   CODE:contact1.html
+
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Me</title>
+    <style>  
+     body 
+        {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+        header 
+        {
+            background-color: rgba(2, 82, 82, 0.8);
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+        }
+        h1 
+        {
+            color: white;
+        }
+        .contact-info 
+        {
+            background-color: #ffffff;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 15px;
+            margin: 10px 0;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            text-decoration: none;
+        }
+        .contact-info h2 
+        {
+            color: rgba(2, 82, 82, 0.8);
+        }
+        .contact-info p 
+        {
+            margin: 5px 0;
+        }
+        footer 
+        {
+            text-align: center;
+            padding: 0.5px 0.5px;
+            background-color: #333;
+            color: white;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+        .contact-form 
+        {
+            margin-top: 20px;
+            background-color: #ffffff;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 15px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        .contact-form h2 
+        {
+            color: rgba(2, 82, 82, 0.8);
+        }
+        a 
+        {
+            color: rgb(16, 116, 231);
+            text-decoration: none;
+        }
+        a:hover 
+        {
+            color: red;
+        }
+        a:active 
+        {
+            color: red;
+        }
+        .contact-form input,
+        .contact-form textarea 
+        {
+            width: 100%;
+            padding: 10px;
+            margin: 5px 0;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+        .contact-form button 
+        {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 10px;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        .contact-form button:hover 
+        {
+            background-color: #45a049;
+        }
+    </style>
+    </head>
+    <body>
+    <header>
+        <h1><b>CONTACT ME </b></h1>
+    </header>
+    <section>
+        <div class="contact-info">
+            <h2>Get in Touch</h2>
+            <p>If you have any questions or would like to connect, feel free to reach out!</p>
+            <p>✉️ <a href="mailto:anushareddygayam383@gmail.com">Email</a></p>
+            <p>📞<a href="+91 ">MobileNum</a></p>
+            <p>🔗 <a href="https://www.linkedin.com/in/gayam-anusha-900933231/" target="link">LinkedIn</a></p>
+            <p>🐱‍💻 <a href="https://github.com/anusha020421" target="_blank">GitHub </a></p>
+        </div>
+        <div class="contact-form">
+            <h2>Contact Form</h2>
+            <form action="your_form_processing_script.php" method="POST">
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+    </section>
+    <footer>
+        <p>&copy; 2025 Gayam Anusha</p>
+    </footer>
+    </body>
+    </html>
 
 Technologies Used:
 1.HTML5
