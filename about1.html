@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me</title>
+    <style>
+        body 
+        {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        header 
+        {
+            background-color: rgba(2, 82, 82, 0.8);
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+        }
+
+        main 
+        {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+            background-color: #ffffff;
+            margin: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .section 
+        {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            width: 100%;
+        }
+
+        .text 
+        {
+            flex: 1;
+            padding: 20px;
+        }
+
+        .image 
+        {
+            max-width: 300px;
+            height: auto;
+            border-radius: 8px;
+        }
+
+        .name 
+        {
+            color: blue;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            font-size: xx-large;
+        }
+
+        @media (max-width: 768px) 
+        {
+            .section 
+            {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .text 
+            {
+                text-align: center;
+                padding: 10px;
+            }
+
+            .image 
+            {
+                margin-top: 15px;
+            }
+        }
+
+
+        @media (max-width: 480px) 
+        {
+            header h1 
+            {
+                font-size: 24px;
+            }
+
+            main 
+            {
+                padding: 10px;
+            }
+
+            footer 
+            {
+                font-size: 12px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1><b>ABOUT ME</b></h1>
+    </header>
+
+    <main>
+        <section class="section">
+            <div class="text">
+                <center>
+                    <h1 class="name"> <b>GAYAM ANUSHA</b></h1>
+                    <p><I><b> I am aspiring for Full Stack Developer roles and I am ready to take on new
+                                challenges!</b></I></p>
+                </center>
+            </div>
+            <div>
+                <img src="https://i.pinimg.com/736x/c2/4e/61/c24e613caf923e2ab1dd1fa578219f5e.jpg" alt="Gayam Anusha"
+                    class="image">
+            </div>
+        </section>
+    </main>
+
+</body>
+
+</html>

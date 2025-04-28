@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Website</title>
+    <style>
+        body 
+        {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+
+        header 
+        {
+            background-color: rgba(2, 82, 82, 0.8);
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+        }
+
+        .message h1 
+        {
+            font-weight: bold;
+            color: white;
+            margin: 0;
+        }
+
+        main 
+        {
+            padding: 20px;
+        }
+
+        img 
+        {
+            max-width: 50vh;
+            height: 70vh;
+            margin: 0 auto;
+            display: block;
+        }
+
+
+        @media (max-width: 768px) 
+        {
+            header 
+            {
+                padding: 24px;
+            }
+
+            .message 
+            {
+                font-size: 20px;
+            }
+
+            main 
+            {
+                padding: 15px;
+            }
+        }
+
+        @media (max-width: 480px) 
+        {
+            .message 
+            {
+                font-size: 18px;
+            }
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <header>
+        <h1 class="message"><b> HELLO EVERYONE! <br>
+                THIS IS <br>
+                MY SIMPLE RESPONSIVE WEBSITE</b></h1>
+    </header>
+
+    <main>
+        <section>
+            <img src="https://media.istockphoto.com/id/1286060912/vector/woman-in-a-suit-pointing.jpg?s=612x612&w=0&k=20&c=vutC8dupiSkNyRT_QKQmEfi-0WQgpX3VgjZAbiuMhXs="
+                alt="girl_image">
+        </section>
+    </main>
+
+</body>
+
+</html>
