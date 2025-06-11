@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Ask Question - Video Upload</title>
+<link rel="stylesheet" href="Upload2.css" />
+</head>
+
+<body>
+
+  <main class="container" role="main" aria-labelledby="page-title">
+    <h1 id="page-title">Ask a Question - Video Upload</h1>
+
+    <form id="email-form" novalidate aria-describedby="next-step-info">
+      <label for="email-input">Email for OTP Verification</label>
+      <input
+        type="email"
+        id="email-input"
+        name="email"
+        placeholder="you@example.com"
+        autocorrect="off"
+        autocomplete="email"
+        required
+        aria-required="true"
+        aria-describedby="email-help email-error"
+      />
+      <div id="email-help" class="info-text">Enter your email to receive a one-time password (OTP).</div>
+      <div id="demo-otp" class="info-text" style="margin-top:8px; color:#2563eb; font-weight:bold;">
+        Your OTP code for demo: <span id="default-otp"></span>
+      </div>
+      <div id="email-error" class="error-text" aria-live="assertive"></div>
+      <button type="submit" class="btn btn-primary" id="send-otp-btn">Send OTP</button>
+
+      <p id="next-step-info" class="info-text" style="margin-top:16px; display:none;">
+        OTP sent! Please enter the code in the popup window.
+      </p>
+    </form>
+
+    <form id="video-upload-form" novalidate style="display:none; flex-direction:column;" aria-disabled="true" aria-describedby="upload-info upload-error upload-success">
+      <label for="video-file-input">Upload Video Question (Max 2 minutes, 50MB)</label>
+      <input
+        type="file"
+        id="video-file-input"
+        name="video"
+        accept="video/*"
+        aria-describedby="upload-info upload-error"
+        disabled
+        required
+        aria-required="true"
+      />
+      <div id="upload-info" class="info-text" style="margin-bottom:8px;">
+        You can upload videos only between 2:00 PM and 7:00 PM. Allowed max size: 50MB and max length: 2 minutes.
+      </div>
+      <div id="upload-error" class="error-text" aria-live="assertive"></div>
+      <button type="submit" class="btn btn-primary" id="upload-video-btn" disabled>Upload Video</button>
+      <div id="upload-success" class="success-text" aria-live="polite"></div>
+    </form>
+  </main>
+
+
+  <div class="modal-overlay" id="otp-modal" role="dialog" aria-modal="true" aria-labelledby="otp-title" aria-describedby="otp-desc">
+    <div class="modal">
+      <h2 id="otp-title">Enter OTP</h2>
+      <p id="otp-desc" class="info-text">Please enter the 6-digit code sent to your email.</p>
+      <div class="otp-inputs" role="group" aria-label="One-time password inputs">
+        <input type="text" inputmode="numeric" pattern="[0-9]*" maxlength="1" aria-label="OTP digit 1" />
+        <input type="text" inputmode="numeric" pattern="[0-9]*" maxlength="1" aria-label="OTP digit 2" />
+        <input type="text" inputmode="numeric" pattern="[0-9]*" maxlength="1" aria-label="OTP digit 3" />
+        <input type="text" inputmode="numeric" pattern="[0-9]*" maxlength="1" aria-label="OTP digit 4" />
+        <input type="text" inputmode="numeric" pattern="[0-9]*" maxlength="1" aria-label="OTP digit 5" />
+        <input type="text" inputmode="numeric" pattern="[0-9]*" maxlength="1" aria-label="OTP digit 6" />
+      </div>
+      <div class="error-text" id="otp-error" aria-live="assertive"></div>
+      <div class="modal-buttons">
+        <button type="button" class="btn btn-secondary" id="otp-cancel-btn">Cancel</button>
+        <button type="button" class="btn btn-primary" id="otp-verify-btn" disabled>Verify</button>
+      </div>
+    </div>
+  </div>
+
+<script src="Upload2.js"></script>
+
+</body>
+</html>
+
