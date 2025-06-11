@@ -1,16 +1,17 @@
 # NullClass_Internship_Tasks
+# ..........................................................................................................................................................
 
-TASK-1
+**TASK-1**
 
  - Responsive Personal Website
  - Welcome to my Responsive Personal Website project!
  - This project showcases my skills in frontend development using HTML and CSS, with a focus on responsive design for various devices like desktops, tablets, and mobiles.
 
-Project Overview:
+**Project Overview:**
   This is a simple and clean personal website built with only HTML and CSS, designed to introduce myself, my skills, and ways to contact me. The website is fully responsive and adjusts gracefully across different screen sizes.
 The website consists of the following pages:
   
-CODE: Task1.html:
+**CODE: Task1.html:**
     
        <!DOCTYPE html>
        <html lang="en"> 
@@ -139,9 +140,9 @@ CODE: Task1.html:
        </body>
     </html>
 
-  - Home Page: A welcome page with a responsive full-screen image and navigation bar.
+**Home Page: A welcome page with a responsive full-screen image and navigation bar.**
     
-CODE: home1.html
+**CODE: home1.html**
 
     <!DOCTYPE html>
     <html lang="en">
@@ -219,9 +220,9 @@ CODE: home1.html
     </body>
     </html>
      
-  - About Page: A detailed section about me, highlighting my aspirations and a profile image.
+**About Page: A detailed section about me, highlighting my aspirations and a profile image.**
      
-CODE: about1.html
+**CODE: about1.html**
     
      <!DOCTYPE html>
      <html lang="en">
@@ -340,7 +341,7 @@ CODE: about1.html
       * Personal Resume Website – A portfolio project showcasing HTML/CSS skills.
       * JDBC CRUD Application – Java-based database application.
       
-   CODE:summary1.html
+   **CODE:summary1.html**
     
     
     <!DOCTYPE html>
@@ -446,9 +447,9 @@ CODE: about1.html
     </body>
     </html>
     
-   - Contact Page: Provides my email, phone number, LinkedIn, GitHub links, and a contact form.
+**Contact Page: Provides my email, phone number, LinkedIn, GitHub links, and a contact form.**
 
-   CODE:contact1.html
+   **CODE:contact1.html**
 
     <!DOCTYPE html>
     <html lang="en">
@@ -582,19 +583,71 @@ CODE: about1.html
     </body>
     </html>
 
-Technologies Used:
+**Technologies Used:**
 1.HTML5
 2.CSS3
 3.Responsive Web Design (Media Queries)
 
-Features:
+**Features:**
   - Fully responsive design for mobile, tablet, and desktop devices.
   - Simple, clean, and professional layout.
   - Easy navigation with a fixed header and navigation bar.
   - Contact form ready for integration with backend processing.
   - External links to my LinkedIn and GitHub profiles.
 
-Future Enhancements:
+**Future Enhancements:**
   - Add JavaScript for form validation and interactivity.
   - Improve animations and transitions for better user experience.
   - Deploy the website using GitHub Pages or any hosting platform.
+
+# ............................................................................................................................................................
+
+
+# TASK-2
+
+**Video Question Upload Feature with Email OTP Authentication**
+
+**Project Overview**
+This project implements a secure and user-friendly feature to allow students to upload questions in video format as part of an "Ask Question" interface. It ensures videos are uploaded only by authenticated users via email OTP (One-Time Password), enforces strict video constraints, and restricts upload timing to a specified window for better management.
+
+**Feature Summary**
+- Video Upload as Question:
+    Students can upload their questions in video format through an intuitive, accessible interface.
+
+**Email OTP Authentication:**
+Before uploading, users must verify their email address using a one-time password to ensure authenticity and prevent abuse.
+
+**Video Constraints:**
+- Maximum video length: 2 minutes
+- Maximum file size: 50MB
+- Uploads exceeding these restrictions are rejected with clear error messages.
+- Time-based Upload Restrictions:
+- Video uploads are permitted only between 2 PM and 7 PM daily. Outside this window, the system disallows uploads with an informative message.
+
+**Technical Details**
+**Frontend:**
+- Single-page app with separate HTML, CSS, and JavaScript files
+- Responsive and accessible UI following modern web standards
+- Email input and OTP modal for authentication
+- File input with client-side video validation (size, duration)
+- Upload button enabled only upon successful OTP verification and valid video file
+- Time restrictions enforced client-side with friendly feedback
+
+**OTP Flow:**
+- A randomly generated 6-digit OTP code is displayed for demonstration (in practice, this would be emailed via backend)
+- User enters the OTP to verify and unlock video upload controls
+- Resend of OTP is disabled once sent per session to avoid abuse
+- Client-side Validations:
+
+**Video size checked against 50MB limit**
+- Video length retrieved using video metadata and limited to 2 minutes
+- Current time checked to permit uploads only between 14:00 and 19:00 local time
+
+**How to Use**
+- Enter a valid email address and click "Send OTP"
+- Check the displayed OTP code (for demo) or the email in the real implementation
+- Enter the OTP in the modal and verify
+- Upon verification, choose a video file that meets size and length restrictions
+- Click "Upload Video" only during permitted times (2 PM to 7 PM)
+
+**Upload.html**
