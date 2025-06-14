@@ -1223,39 +1223,43 @@ This project enhances a simple ** "Messaging App"** by integrating browser-based
 The notification feature is implemented entirely on the frontend using the browser's native Notification API and localStorage for persistence.
 
 **Frontend**
-** HTML Structure (Messagigapp3.Html):**
-    - A "Profile" section (id="profile-section") has been added to the main content area, initially hidden. Within the profile section, a     "Notification Settings" subsection contains a label with a custom toggle switch (id="notification-toggle") for enabling/disabling notifications.
-    - A div with id="notification-status" is present to display the current notification permission status to the user
+
+**HTML Structure (Messagigapp3.Html):**
+  
+- A "Profile" section (id="profile-section") has been added to the main content area, initially hidden. Within the profile section, a     "Notification Settings" subsection contains a label with a custom toggle switch (id="notification-toggle") for enabling/disabling notifications.
+- A div with id="notification-status" is present to display the current notification permission status to the user
  (e.g., "Notifications are ON", "Permission Denied").
 
-** CSS Styling (Messagigapp3.css):**
-    - Styles have been added for the new .profile-settings and .profile-section elements to integrate them seamlessly into the app's design.
-    - Crucially, specific CSS creates the visual appearance of the toggle switch (.switch, .slider), transforming a standard checkbox into an intuitive on/off button. Styles are defined for both checked (enabled) and unchecked (disabled) states.
+**CSS Styling (Messagigapp3.css):**
+
+- Styles have been added for the new .profile-settings and .profile-section elements to integrate them seamlessly into the app's design.
+- Crucially, specific CSS creates the visual appearance of the toggle switch (.switch, .slider), transforming a standard checkbox into an intuitive on/off button. Styles are defined for both checked (enabled) and unchecked (disabled) states.
       
-** JavaScript Logic (Messagigapp3.js):**
-    - DOM Element References: Variables are declared to reference the notification toggle, status display, and navigation buttons.
-    - requestNotificationPermission():
+**JavaScript Logic (Messagigapp3.js):**
+
+**DOM Element References:** Variables are declared to reference the notification toggle, status display, and navigation buttons.
+**requestNotificationPermission():**
      Checks if the Notification API is supported by the user's browser. If not, it disables the toggle and informs the user.
-    - If supported, it checks the current permission status (Notification.permission):
+**If supported, it checks the current permission status (Notification.permission):**
 "default": Prompts the user to requestPermission(). Based on their choice ("granted" or "denied"), it updates the UI and localStorage.
 "granted": Updates the status message to "Notifications are ON."
 "denied": Informs the user that notifications are off due to browser settings and disables the toggle (as the user must change this in browser settings).
-    - updateNotificationToggle(isChecked): A utility function to programmatically set the checked state of the notification toggle.
-    - loadNotificationPreference():
+**updateNotificationToggle(isChecked):** A utility function to programmatically set the checked state of the notification toggle.
+**loadNotificationPreference():**
 Executed on page load (DOMContentLoaded).
 Retrieves the user's last saved preference ('notificationsEnabled') from localStorage.
 Sets the initial state of the notificationToggle accordingly.
 If notifications were previously enabled, it automatically calls requestNotificationPermission() to ensure the permission is still valid.
-    - showNotification(title, body):
+**showNotification(title, body):**
 This is the core function for displaying notifications.
 It first checks if notifications are enabled in localStorage and if the browser permission is granted.
 If both conditions are met, it creates a new Notification object with the provided title, body, and an icon/badge.
 An onclick handler is added to the notification to bring the browser window into focus when the notification is clicked.
-    - Event Triggers:
-         - btn-answer.onclick: After a new reply is successfully added to a conversation, showNotification("New Answer!", ...) is called.
-         - btn-upvote.onclick: When an upvote button is clicked and the count is incremented, showNotification("Upvote Received!", ...) is called.
-         - Profile Navigation (navProfileBtn.addEventListener('click', ...)): When the "Profile" tab is clicked, requestNotificationPermission() is explicitly called to ensure the notification status is up-to-date for the user.
-    - Toggle Switch Event (notificationToggle.addEventListener('change', ...)):
+**Event Triggers:**
+- btn-answer.onclick: After a new reply is successfully added to a conversation, showNotification("New Answer!", ...) is called.
+- btn-upvote.onclick: When an upvote button is clicked and the count is incremented, showNotification("Upvote Received!", ...) is called.
+- Profile Navigation (navProfileBtn.addEventListener('click', ...)): When the "Profile" tab is clicked, requestNotificationPermission() is explicitly called to ensure the notification status is up-to-date for the user.
+**Toggle Switch Event (notificationToggle.addEventListener('change', ...)):**
 When the notification toggle is switched, it updates the 'notificationsEnabled' status in localStorage.
 If enabling, it triggers requestNotificationPermission().
 If disabling, it updates the status message to reflect that notifications are off.
