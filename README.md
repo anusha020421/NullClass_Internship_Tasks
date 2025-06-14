@@ -1263,7 +1263,7 @@ If disabling, it updates the status message to reflect that notifications are of
 **Persistence**
 localStorage: The user's preference for enabling/disabling notifications ('notificationsEnabled') is stored locally in the browser's localStorage, ensuring their choice persists even if they close and reopen the browser.
 
-**Messagigapp.html**
+**Messagigapp3.html**
 
     <!DOCTYPE html>
     <html lang="en">
@@ -1333,7 +1333,7 @@ localStorage: The user's preference for enabling/disabling notifications ('notif
     </html>
 
 
-**Messagigapp.css**
+**Messagigapp3.css**
 
     *, *::before, *::after 
     {
@@ -1833,7 +1833,7 @@ localStorage: The user's preference for enabling/disabling notifications ('notif
       user-select: none;
     }
 
-**Messagigapp.js**
+**Messagigapp3.js**
 
     let conversations = 
     [
