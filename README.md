@@ -1210,7 +1210,7 @@ Before uploading, users must verify their email address using a one-time passwor
 
 **Project Overview: Messaging App with Notification Feature**
 
-This project enhances a simple ** "Messaging App"** by integrating browser-based notifications. It allows users to ask questions, view and reply to conversations, and upvote questions. The key enhancement is a robust notification system that informs users when their questions are answered or upvoted, with full user control over notification preferences.
+This project enhances a simple **"Messaging App"** by integrating browser-based notifications. It allows users to ask questions, view and reply to conversations, and upvote questions. The key enhancement is a robust notification system that informs users when their questions are answered or upvoted, with full user control over notification preferences.
 
 **Feature Summary: Browser Notifications**
 - Real-time Alerts: Users receive pop-up notifications directly from their browser when specific events occur related to their questions.
@@ -1264,8 +1264,7 @@ When the notification toggle is switched, it updates the 'notificationsEnabled' 
 If enabling, it triggers requestNotificationPermission().
 If disabling, it updates the status message to reflect that notifications are off.
 
-**Persistence**
-localStorage: The user's preference for enabling/disabling notifications ('notificationsEnabled') is stored locally in the browser's localStorage, ensuring their choice persists even if they close and reopen the browser.
+**Persistence localStorage:** The user's preference for enabling/disabling notifications ('notificationsEnabled') is stored locally in the    browser's localStorage, ensuring their choice persists even if they close and reopen the browser.
 
 **Messagigapp3.html**
 
