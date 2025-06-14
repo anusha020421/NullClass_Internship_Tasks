@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Messaging App - Notifications Demo</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+  <link rel="stylesheet" href="Messagigapp3.css" />
+</head>
+
+<body>
+  <header>
+    <h1>Messaging APP</h1>
+    </header>
+  <main>
+    <nav class="sidebar" aria-label="Main navigation">
+      <button id="nav-conversations" aria-controls="conversations-section" aria-selected="true" role="tab" class="active">
+        <span class="material-icons" aria-hidden="true">chat_bubble_outline</span> Conversations
+      </button>
+      <button id="nav-profile" aria-controls="profile-section" aria-selected="false" role="tab">
+        <span class="material-icons" aria-hidden="true">person_outline</span> Profile
+      </button>
+    </nav>
+
+    <section id="conversations-section" class="content" role="tabpanel" tabindex="0" aria-label="Conversation list">
+      <h2 style="margin-top:0; font-size: 1.5rem; font-weight: 700; margin-bottom: 12px; color: #1e293b;">Your Questions</h2>
+
+      <form id="add-question-form" aria-label="Add a new question form">
+        <div style="flex:1 1 300px; display:flex; flex-direction: column;">
+          <label for="new-question-text">Question</label>
+          <input type="text" id="new-question-text" placeholder="Type your question here..." required />
+        </div>
+        <div style="flex:1 1 400px; display:flex; flex-direction: column;">
+          <label for="new-question-desc">Description</label>
+          <textarea id="new-question-desc" placeholder="Add a description or context (optional)"></textarea>
+        </div>
+        <button type="submit" id="add-question-btn" disabled>Add Question</button>
+      </form>
+
+      <div class="conversation-list" id="conversation-list" aria-live="polite" aria-relevant="additions">
+        </div>
+    </section>
+
+    <section id="profile-section" class="content" role="tabpanel" tabindex="0" aria-label="User profile settings" hidden>
+      <div class="profile-settings">
+        <div class="profile-section">
+          <h3>Notification Settings</h3>
+          <div class="setting-item">
+            <span>Browser Notifications</span>
+            <label class="switch">
+              <input type="checkbox" id="notification-toggle">
+              <span class="slider"></span>
+            </label>
+          </div>
+          <div id="notification-status"></div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+ <script src="Messagigapp3.js"></script>
+ 
+</body>
+</html>
