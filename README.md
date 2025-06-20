@@ -598,3 +598,56 @@ Future Enhancements:
   - Add JavaScript for form validation and interactivity.
   - Improve animations and transitions for better user experience.
   - Deploy the website using GitHub Pages or any hosting platform.
+
+
+
+# TASK-4
+
+# Project Title: Forgot Password System & Password Generator
+
+**Description:**
+This project provides a secure Password Reset functionality for websites/applications.
+
+- Users can request password reset via email or phone number
+- Rate limiting: Users can request only once per 24 hours (prevent abuse)
+- Auto-generated password: A random secure password (only lettercase, no numbers/symbols)
+- User-friendly UI: Clean, responsive form with error handling
+- Works entirely on the frontend (localStorage tracks last request time)
+
+**Key Features:**
+- ✅ Dual Reset Methods
+Reset password via email or phone number (toggle between tabs)
+
+- 🚀 Random Password Generator
+Creates a 12-character password with upper & lowercase letters only (no numbers/special chars)
+Example: XkPFtjQGhBYa
+
+- ⏳ Request Rate Limiting
+Users cannot spam reset requests
+Shows warning: "You can request only once per day."
+
+- 📱 Mobile Responsive
+Adapts to all screen sizes (desktop, tablet, mobile)
+
+- 🎨 Modern UI
+Built with Tailwind CSS for sleek styling, Smooth animations for success/error feedback
+
+**Technology Stack:**
+
+**Frontend:** 
+- HTML
+- CSS (Tailwind)
+- JavaScript
+  
+**Storage:** localStorage (tracks last request time)
+No backend needed (but easily extendable to API calls)
+
+**How It Works:**
+- User enters email/phone
+- Clicks [Generate Password] → creates random mixed-case password
+- Clicks [Request Reset] → stores timestamp in localStorage
+- If requested again within 24hrs, shows error message
+
+**Usage Instructions:**
+- Open PasswordGenerator4.html in any browser
+- Test password generator or rate-limiting
