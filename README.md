@@ -3,6 +3,8 @@
 
 # TASK-1
 
+# Responsive Website
+
  - Responsive Personal Website
  - Welcome to my Responsive Personal Website project!
  - This project showcases my skills in frontend development using HTML and CSS, with a focus on responsive design for various devices like desktops, tablets, and mobiles.
@@ -604,7 +606,7 @@ The website consists of the following pages:
 
 # TASK-2
 
-**Video Question Upload Feature with Email OTP Authentication**
+# Video Question Upload Feature with Email OTP Authentication**
 
 **Project Overview**
 This project implements a secure and user-friendly feature to allow students to upload questions in video format as part of an "Ask Question" interface. It ensures videos are uploaded only by authenticated users via email OTP (One-Time Password), enforces strict video constraints, and restricts upload timing to a specified window for better management.
@@ -1207,6 +1209,7 @@ Before uploading, users must verify their email address using a one-time passwor
 
 # TASK-3
 
+# Project Title: Interactive Q&A Forum with Notification System
 
 **Project Overview: Messaging App with Notification Feature**
 
