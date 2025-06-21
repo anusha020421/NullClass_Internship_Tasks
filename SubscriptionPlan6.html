@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StackOverflow Pro - Subscription Plans</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="./SubscriptionPlan6.css">
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <img src="https://cdn.sstatic.net/Sites/stackoverflow/Img/apple-touch-icon.png" alt="StackOverflow Logo" class="logo">
+            <h1><b>StackOverflow Pro Plans</b></h1>
+            <p class="subtitle">Upgrade your question posting capabilities</p>
+        </header>
+        
+        <div class="plans">
+            <div class="plan plan-free">
+                <div class="plan-header">
+                    <h2 class="plan-title"><b>Free</b> <span class="badge badge-free">Current</span></h2>
+                    <div class="plan-price">₹0<span>/month</span></div>
+                </div>
+                <div class="plan-features">
+                    <div class="feature">
+                        <i class="fas fa-question-circle"></i>
+                        <span><span class="highlight">1 question</span> per day</span>
+                    </div>
+                    <div class="feature">
+                        <i class="fas fa-users"></i>
+                        <span>Community support</span>
+                    </div>
+                    <div class="feature">
+                        <i class="fas fa-ad"></i>
+                        <span>Basic ad experience</span>
+                    </div>
+                </div>
+                <div class="plan-action">
+                    <button class="btn btn-free" onclick="subscribe('free')">Current Plan</button>
+                </div>
+            </div>
+            
+            <div class="plan plan-bronze5">
+                <div class="plan-header">
+                    <h2 class="plan-title"><b>Bronze</b> <span class="badge badge-success">Popular</span></h2>
+                    <div class="plan-price">₹100<span>/month</span></div>
+                </div>
+                <div class="plan-features">
+                    <div class="feature">
+                        <i class="fas fa-question-circle"></i>
+                        <span><span class="highlight">5 questions</span> per day</span>
+                    </div>
+                    <div class="feature">
+                        <i class="fas fa-headset"></i>
+                        <span>Priority support</span>
+                    </div>
+                    <div class="feature">
+                        <i class="fas fa-ad"></i>
+                        <span>Reduced ads</span>
+                    </div>
+                    <div class="feature">
+                        <i class="fas fa-chart-line"></i>
+                        <span>Basic analytics</span>
+                    </div>
+                </div>
+                <div class="plan-action">
+                    <button class="btn btn-primary" onclick="subscribe('bronze5')">Upgrade Now</button>
+                </div>
+            </div>
+            
+            <div class="plan plan-bronze10">
+                <div class="plan-header">
+                    <h2 class="plan-title"><b>Bronze Pro</b></h2>
+                    <div class="plan-price">₹300<span>/month</span></div>
+                </div>
+                <div class="plan-features">
+                    <div class="feature">
+                        <i class="fas fa-question-circle"></i>
+                        <span><span class="highlight">10 questions</span> per day</span>
+                    </div>
+                    <div class="feature">
+                        <i class="fas fa-headset"></i>
+                        <span>Priority support</span>
+                    </div>
+                    <div class="feature">
+                        <i class="fas fa-ad"></i>
+                        <span>Ad-free experience</span>
+                    </div>
+                    <div class="feature">
+                        <i class="fas fa-chart-line"></i>
+                        <span>Detailed analytics</span>
+                    </div>
+                    <div class="feature">
+                        <i class="fas fa-check-circle"></i>
+                        <span>Featured questions</span>
+                    </div>
+                </div>
+                <div class="plan-action">
+                    <button class="btn btn-primary" onclick="subscribe('bronze10')">Upgrade Now</button>
+                </div>
+            </div>
+            
+            <div class="plan plan-gold">
+                <div class="plan-header">
+                    <h2 class="plan-title"><b>Gold</b></h2>
+                    <div class="plan-price">₹1000<span>/month</span></div>
+                </div>
+                <div class="plan-features">
+                    <div class="feature">
+                        <i class="fas fa-infinity"></i>
+                        <span><span class="highlight">Unlimited</span> questions</span>
+                    </div>
+                    <div class="feature">
+                        <i class="fas fa-headset"></i>
+                        <span>24/7 Premium support</span>
+                    </div>
+                    <div class="feature">
+                        <i class="fas fa-ad"></i>
+                        <span>Ad-free experience</span>
+                    </div>
+                    <div class="feature">
+                        <i class="fas fa-chart-line"></i>
+                        <span>Advanced analytics</span>
+                    </div>
+                    <div class="feature">
+                        <i class="fas fa-star"></i>
+                        <span>Early access to features</span>
+                    </div>
+                    <div class="feature">
+                        <i class="fas fa-bolt"></i>
+                        <span>Priority question placement</span>
+                    </div>
+                </div>
+                <div class="plan-action">
+                    <button class="btn btn-primary" onclick="subscribe('gold')">Upgrade Now</button>
+                </div>
+            </div>
+        </div>
+        
+        <div class="time-restriction">
+            <i class="fas fa-clock"></i>
+            <strong>Payment Window:</strong> Subscription payments can only be processed between <span class="highlight">10:00 AM - 11:00 AM IST</span> daily
+        </div>
+    </div>
+
+    <script src="./SubscriptionPlan6.js"></script>
+</body>
+</html>
