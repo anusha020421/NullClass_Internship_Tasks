@@ -610,7 +610,6 @@ A subscription system with payment gateway integration for StackOverflow questio
 
 - 💳 Integrated payment processing (Stripe/Razorpay)
 - ⏰ Time-restricted payments (10-11 AM IST only)
-- 📧 Automated email invoicing
 - 📊 Multiple subscription tiers
 - 🚀 Responsive design
 
