@@ -1,0 +1,216 @@
+:root 
+{
+    --primary: #4f46e5;
+    --secondary: #f59e0b;
+    --dark: #1e293b;
+    --light: #f8fafc;
+}
+
+body 
+{
+    font-family: 'Inter', sans-serif;
+    background-color: #f1f5f9;
+}
+
+.badge 
+{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 9999px;
+    padding: 0.25rem 0.75rem;
+    font-size: 0.875rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+.badge-bronze 
+{
+    background-color: #cd7f32;
+    color: white;
+}
+
+.badge-silver 
+{
+    background-color: #c0c0c0;
+    color: white;
+}
+
+.badge-gold 
+{
+    background-color: #ffd700;
+    color: white;
+}
+
+.badge-platinum 
+{
+    background-color: #e5e4e2;
+    color: black;
+}
+
+.progress-bar 
+{
+    height: 8px;
+    border-radius: 4px;
+    background-color: #e2e8f0;
+    overflow: hidden;
+}
+
+.progress-fill 
+{
+    height: 100%;
+    background-color: var(--primary);
+    transition: width 0.3s ease;
+}
+
+.card 
+{
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card:hover 
+{
+    transform: translateY(-2px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+.floating-button 
+{
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 50;
+}
+
+.modal 
+{
+    transition: opacity 0.2s ease, transform 0.2s ease;
+}
+
+.modal-enter 
+{
+    opacity: 0;
+    transform: translateY(10px);
+}
+
+.modal-enter-active 
+{
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.tabs 
+{
+    display: flex;
+    border-bottom: 1px solid #e2e8f0;
+}
+
+.tab 
+{
+    padding: 0.75rem 1.5rem;
+    cursor: pointer;
+    border-bottom: 2px solid transparent;
+    transition: all 0.2s ease;
+}
+
+.tab-active 
+{
+    border-bottom-color: var(--primary);
+    color: var(--primary);
+    font-weight: 600;
+}
+
+.avatar 
+{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+    color: white;
+    background-color: var(--primary);
+}
+
+.avatar-lg 
+{
+    width: 80px;
+    height: 80px;
+    font-size: 1.5rem;
+}
+
+.podium 
+{
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    height: 200px;
+    margin-bottom: 2rem;
+}
+
+.podium-item 
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 0 1rem;
+}
+
+.podium-1 
+{
+    height: 180px;
+    background-color: #ffd700;
+    width: 120px;
+    border-radius: 8px 8px 0 0;
+}
+
+.podium-2 
+{
+    height: 140px;
+    background-color: #c0c0c0;
+    width: 120px;
+    border-radius: 8px 8px 0 0;
+}
+
+.podium-3 
+{
+    height: 100px;
+    background-color: #cd7f32;
+    width: 120px;
+    border-radius: 8px 8px 0 0;
+}
+
+.podium-rank 
+{
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-top: 0.5rem;
+}
+
+.podium-name 
+{
+    margin-top: 0.5rem;
+    font-weight: bold;
+}
+
+.podium-points 
+{
+    margin-top: 0.5rem;
+    color: #666;
+}
+
+.settings-modal 
+{
+    max-width: 500px;
+    width: 90%;
+}
