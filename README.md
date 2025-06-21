@@ -598,3 +598,112 @@ Future Enhancements:
   - Add JavaScript for form validation and interactivity.
   - Improve animations and transitions for better user experience.
   - Deploy the website using GitHub Pages or any hosting platform.
+
+
+# Task-5
+# KnowledgeHub Reward System 🏆
+
+A comprehensive reward system to incentivize user contributions with points and badges.
+
+![Reward System Screenshot](screenshot.png) *(add screenshot file later)*
+
+## Features ✨
+
+- **Point System**:
+  - Earn points by answering questions (+5)
+  - Bonus points for upvoted answers (+5 for 5 upvotes)
+  - Lose points when answers are removed (-5)
+- **Badge System**:
+  - Earn badges (Bronze, Silver, Gold, Platinum)
+  - Special achievement badges (First Answer, Popular Answer, etc.)
+- **User Profiles**:
+  - Track points and badges
+  - View activity history
+- **Point Transfers**:
+  - Send points to other users (min. 10 required)
+  - Transaction history tracking
+- **Leaderboard**:
+  - See top contributors
+  - Visual podium for top 3 users
+
+## How Points Work ⚖️
+Action
+
+Points
+
+Answer a question
+
++5
+
+Answer gets 5 upvotes
+
++5
+
+Answer marked as correct
+
++10
+
+Remove an answer
+
+-5
+
+Answer gets 5 downvotes
+
+-5
+
+Answer marked as incorrect
+
+-10
+
+Technologies Used 💻
+Frontend:
+HTML5, CSS3, JavaScript
+Tailwind CSS for styling
+Font Awesome for icons
+Setup Instructions 🛠️
+Clone the repository:
+bash
+Run
+Copy code
+git clone https://github.com/yourusername/knowledgehub-rewards.git
+cd knowledgehub-rewards
+Open in browser (no build needed):
+bash
+Run
+Copy code
+open index.html  # On Mac
+start index.html # On Windows
+Or simply double-click the index.html file.
+
+Architecture 🏗️
+Run
+Copy code
+knowledgehub-rewards/
+├── index.html           # Main application file
+├── README.md            # This documentation
+├── screenshot.png       # Application screenshot
+└── assets/              # Optional assets folder
+    ├── css/
+    ├── js/
+    └── images/
+Usage Examples 🖥️
+Transferring Points:
+
+Click "Transfer Points" button
+Search for a user
+Enter amount (min. 10 points required)
+Confirm transfer
+Viewing Leaderboard:
+
+Click "Leaderboard" tab
+See top contributors ranked by points
+Checking Transactions:
+
+Click "Transactions" tab
+View all point transfers and activities
+Future Enhancements 🚀
+[ ] User authentication system
+[ ] Backend API integration
+[ ] More badge types and levels
+[ ] Gamification elements (streaks, challenges)
+[ ] Point redemption for rewards
