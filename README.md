@@ -583,19 +583,19 @@ CODE: about1.html
     </body>
     </html>
 
-Technologies Used:
+**Technologies Used:**
 1.HTML5
 2.CSS3
 3.Responsive Web Design (Media Queries)
 
-Features:
+**Features:**
   - Fully responsive design for mobile, tablet, and desktop devices.
   - Simple, clean, and professional layout.
   - Easy navigation with a fixed header and navigation bar.
   - Contact form ready for integration with backend processing.
   - External links to my LinkedIn and GitHub profiles.
 
-Future Enhancements:
+**Future Enhancements:**
   - Add JavaScript for form validation and interactivity.
   - Improve animations and transitions for better user experience.
   - Deploy the website using GitHub Pages or any hosting platform.
