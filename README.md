@@ -605,7 +605,7 @@ The website consists of the following pages:
 
 # TASK-2
 
-**Video Question Upload Feature with Email OTP Authentication**
+# Video Question Upload Feature with Email OTP Authentication
 
 **Project Overview**
 This project implements a secure and user-friendly feature to allow students to upload questions in video format as part of an "Ask Question" interface. It ensures videos are uploaded only by authenticated users via email OTP (One-Time Password), enforces strict video constraints, and restricts upload timing to a specified window for better management.
