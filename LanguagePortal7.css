@@ -1,0 +1,168 @@
+:root 
+{
+     --primary: #4361ee;
+     --primary-dark: #3a56d4;
+     --secondary: #3f37c9;
+     --accent: #4895ef;
+     --success: #4cc9f0;
+     --danger: #f72585;
+     --light: #f8f9fa;
+     --dark: #212529;
+     --gray: #6c757d;
+     --white: #ffffff;
+ }
+
+ * 
+ {
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+ }
+
+ body 
+ {
+     font-family: 'Poppins', sans-serif;
+     background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+     min-height: 100vh;
+     color: var(--dark);
+     line-height: 1.6;
+     padding: 20px;
+ }
+
+ .container 
+ {
+     max-width: 800px;
+     margin: 2rem auto;
+     background: var(--white);
+     border-radius: 16px;
+     padding: 2rem;
+     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+ }
+
+ header 
+ {
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     margin-bottom: 2rem;
+ }
+
+ .logo 
+ {
+     font-size: 1.8rem;
+     font-weight: 700;
+     color: var(--primary);
+ }
+
+ #language-select 
+ {
+     padding: 0.75rem 2rem 0.75rem 1rem;
+     font-size: 1rem;
+     border: 2px solid var(--primary);
+     border-radius: 8px;
+     background-color: var(--white);
+     color: var(--dark);
+     cursor: pointer;
+     transition: all 0.3s ease;
+ }
+
+ .content 
+ {
+     text-align: center;
+     padding: 2rem 0;
+ }
+
+ h1 
+ {
+     font-size: 2.5rem;
+     margin-bottom: 1rem;
+     color: var(--primary);
+ }
+
+ p 
+ {
+     font-size: 1.1rem;
+     color: var(--gray);
+     margin-bottom: 2rem;
+ }
+
+ #otp-modal 
+ {
+     position: fixed;
+     top: 0;
+     left: 0;
+     right: 0;
+     bottom: 0;
+     background: rgba(0, 0, 0, 0.5);
+     display: none;
+     align-items: center;
+     justify-content: center;
+     z-index: 1000;
+ }
+
+ .modal-content 
+ {
+     background: var(--white);
+     border-radius: 16px;
+     width: 90%;
+     max-width: 500px;
+     padding: 2.5rem;
+     box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+ }
+
+ .input-group 
+ {
+     margin-bottom: 1.5rem;
+ }
+
+ .input-group input 
+ {
+     width: 100%;
+     padding: 1rem;
+     border: 2px solid #e9ecef;
+     border-radius: 8px;
+     font-size: 1rem;
+ }
+
+ .button-group 
+ {
+     display: flex;
+     gap: 1rem;
+     margin-top: 2rem;
+ }
+
+ .btn 
+ {
+     padding: 1rem;
+     border: none;
+     border-radius: 8px;
+     font-size: 1rem;
+     font-weight: 500;
+     cursor: pointer;
+     transition: all 0.3s ease;
+     flex: 1;
+ }
+
+ .btn-primary 
+ {
+     background-color: var(--primary);
+     color: var(--white);
+ }
+
+ .btn-secondary 
+ {
+     background-color: var(--light);
+     color: var(--dark);
+ }
+
+ .hidden 
+ {
+     display: none !important;
+ }
+
+ #otp-timer 
+ {
+     font-size: 0.9rem;
+     color: var(--gray);
+     margin-top: 0.5rem;
+ }

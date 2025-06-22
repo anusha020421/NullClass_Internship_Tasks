@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Global Language Portal</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link  href="./LanguagePortal7.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <div class="logo"><b>Global</b></div>
+            <select id="language-select">
+                <option value="en">English</option>
+                <option value="es">Español</option>
+                <option value="hi">हिन्दी</option>
+                <option value="pt">Português</option>
+                <option value="zh">中文</option>
+                <option value="fr">Français</option>
+            </select>
+        </header>
+        
+        <div class="content">
+            <h1 id="welcome-text"><b>Welcome to Global</b></h1>
+            <p id="description">Please select your preferred language from the dropdown menu.</p>
+        </div>
+    </div>
+    
+    <div id="otp-modal">
+        <div class="modal-content">
+            <h2 id="modal-title">Verify Your Identity</h2>
+            <p id="modal-description">We need to verify your identity before switching languages.</p>
+            
+            <div class="input-group" id="email-group">
+                <label for="email">Email Address</label>
+                <input type="email" id="email" placeholder="your@email.com">
+            </div>
+            
+            <div class="input-group" id="mobile-group">
+                <label for="mobile">Mobile Number</label>
+                <input type="tel" id="mobile" placeholder="+1 234 567 8900">
+            </div>
+            
+            <div class="input-group hidden" id="otp-group">
+                <label for="otp">Enter OTP</label>
+                <input type="text" id="otp" placeholder="123456" maxlength="6">
+                <div id="otp-timer">OTP will expire in <span id="countdown">120</span> seconds</div>
+            </div>
+            
+            <div class="button-group">
+                <button id="send-otp-btn" class="btn btn-primary">Send OTP</button>
+                <button id="verify-otp-btn" class="btn btn-primary hidden">Verify OTP</button>
+                <button id="cancel-btn" class="btn btn-secondary">Cancel</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="./LanguagePortal7.js"> </script>
+    
+</body>
+</html>
