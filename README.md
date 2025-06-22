@@ -605,17 +605,22 @@ CODE: about1.html
 # Multi-Language OTP Verification Portal
 
 ## 📌 Key Features
+
 **6 Language Support:** English, Spanish, Hindi, Portuguese, Chinese, French
+
 **Dual Verification:**
 - ✉️ Email OTP for French
 - 📱 Mobile OTP for other languages
+  
 **Security:**
 - OTP expiration
 - Validation before language switch
+  
 **User Experience:**
 - Clean, responsive interface
 - Real-time content translation
 - Interactive OTP flow
+  
 **🛠️ Technical Implementation**
     A[Language Selection] -->|French| B[Email Verification]
     A -->|Other Languages| C[Mobile Verification]
