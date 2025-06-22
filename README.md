@@ -622,13 +622,13 @@ CODE: about1.html
 - Interactive OTP flow
   
 **🛠️ Technical Implementation**
-    A[Language Selection] -->|French| B[Email Verification]
-    A -->|Other Languages| C[Mobile Verification]
-    B --> D[Send Email OTP]
-    C --> E[Send SMS OTP]
-    D --> F[Verify OTP]
-    E --> F
-    F --> G[Switch Language]
+    - A[Language Selection] -->|French| B[Email Verification]
+    - A -->|Other Languages| C[Mobile Verification]
+    - B --> D[Send Email OTP]
+    - C --> E[Send SMS OTP]
+    - D --> F[Verify OTP]
+    - E --> F
+    - F --> G[Switch Language]
 
 **LanguagePortal7.html**
 
